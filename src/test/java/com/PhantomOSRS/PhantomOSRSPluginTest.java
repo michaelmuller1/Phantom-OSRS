@@ -1,13 +1,13 @@
-package com.helmetcheck;
+package com.PhantomOSRS;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class helmetcheckPluginTest
+public class PhantomOSRSPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(helmetcheckPlugin.class);
+		ExternalPluginManager.loadBuiltin(PhantomOSRSPlugin.class);
 		RuneLite.main(args);
 	}
 }

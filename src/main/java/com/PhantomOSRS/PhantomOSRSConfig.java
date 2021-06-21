@@ -1,11 +1,11 @@
-package com.helmetcheck;
+package com.PhantomOSRS;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface helmetcheckConfig extends Config
+@ConfigGroup("helmetcheck")
+public interface PhantomOSRSConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",

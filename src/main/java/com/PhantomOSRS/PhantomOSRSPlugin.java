@@ -1,4 +1,4 @@
-package com.helmetcheck;
+package com.PhantomOSRS;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -12,17 +12,18 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
+
 @Slf4j
 @PluginDescriptor(
-	name = "helmet check"
+	name = "PhantomOSRS"
 )
-public class helmetcheckPlugin extends Plugin
+public class PhantomOSRSPlugin extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private helmetcheckConfig config;
+	private PhantomOSRSConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +47,8 @@ public class helmetcheckPlugin extends Plugin
 	}
 
 	@Provides
-	helmetcheckConfig provideConfig(ConfigManager configManager)
+	PhantomOSRSConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(helmetcheckConfig.class);
+		return configManager.getConfig(PhantomOSRSConfig.class);
 	}
 }
